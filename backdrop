@@ -1,0 +1,49 @@
+#include <Magick++.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <stdbool.h>
+
+void update(bool con[197][39]) {
+
+
+}
+
+void update_pos(int pos[9][1]) {
+
+
+
+}
+
+int main() {
+
+InitializeMagick(*argv);
+Image image;
+int r;
+char direction[9];
+int position[9][1];
+bool conway[99][99];
+unsigned char grid[37][20];
+unsigned char rgb_str = *malloc(24883200);
+
+    for (unsigned char i = 0 i < 100) {
+        for (char j = 0 j < 100) {
+        conway[i][j] = rand()%2;
+        }
+    }
+
+    for (i = 0; i < 10) {
+        position[i][0] = rand()%38;
+        position[i][1] = rand()%21;
+        grid[position[i][0]][position[i][1]] = 6;
+        direction[i] = (x<19&&y>10) + (x<19&&y<10) * 2 + (x>19&&y<10) * 3 + (x>19&&y>10) * 4;
+    }
+
+
+
+
+}
+
+/*
+        r = rand()%5%4%3;
+        direction[i] = direction[i] + (r - (r>>1) * 3);
+*/
